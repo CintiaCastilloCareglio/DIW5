@@ -88,7 +88,7 @@ nav :link{
 }
 
 nav :visited{
-    color: blueviolet;
+    color: rgb(34, 1, 64);
     text-decoration: none;
 }
 /*Artículo----------------------------------------------------*/
