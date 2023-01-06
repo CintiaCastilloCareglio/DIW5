@@ -1,0 +1,302 @@
+/*General------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.whatsapp{
+    position:fixed;
+    top: 90%;
+    left: 90%;
+}
+
+/*Cabecera----------------------------------*/
+header{
+    margin-bottom: 10%;
+}
+
+.logo{
+    float: left;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.logo:hover{
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+header p{
+    color: black;
+    padding: 3px;
+    float: right;
+}
+
+h1{
+    color: #3F9527;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-shadow: 1px 1px 2px black;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+h1:hover{
+    font-size: 60px;
+}
+
+/*Cuerpo-------------------------------------*/
+.texto{
+    font-size: 1em;
+    color: #33CC00;
+    font-family: 'Fredoka One', cursive;
+}
+
+h3{
+    font-family: 'noto_sans';
+}
+
+h2{
+    font-family: 'robot_crush';
+}
+
+/*Menú-------------------------------------------*/
+nav{
+    padding: 10px;
+    background-color: lavender;
+    position: fixed;
+    top: 10%; 
+    left: 55%;
+    font-family: 'Roboto', serif;
+    box-shadow: 3px 6px 1px #7cbf6a;
+}
+
+nav a{
+    border: black;
+    border-style: double;
+    padding: 6px;
+    margin-left: 40px;
+}
+
+nav :link{
+    background-color: white;
+    text-decoration: none;
+}
+
+nav :visited{
+    color: blueviolet;
+    text-decoration: none;
+}
+/*Artículo----------------------------------------------------*/
+section{
+    padding: 10px;
+}
+
+article{
+    padding: 5px;
+}
+
+section a:hover{
+    text-decoration: overline;
+    color: red;
+}
+
+/*Aside-Secciones--------------------------------------------------- */
+#container{
+    display: flex;
+}
+aside{
+    padding: 10px;
+}
+
+aside li{
+    margin: 5px;
+    padding: 4px;
+    list-style: none;
+    flex-direction: column;
+}
+
+aside a{
+    text-decoration: none;
+    border: black;
+    border-style: double;
+    background-color: lavender;
+}
+
+[href*=".pdf"]::after{
+    content: url('../images/icopdf.ico');
+  }
+
+:link{
+    color: #3F9527;
+}
+
+/*Pie---------------------------------------------------*/
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Servicios - tabla------------------------------------*/
+table{
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    border-collapse: collapse;
+    caption-side: bottom;
+    empty-cells: hide;
+    text-align: center;
+}
+
+
+caption{
+    background-color: #33CC00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border: solid;
+}
+
+th{
+    border: solid;
+}
+
+td{
+    border: solid;
+}
+
+tr:nth-child(odd){ 
+    background-color:#7cbf6a;
+}
+
+tr:nth-child(even){ 
+    background-color: rgb(173, 103, 237);
+}
+
+/*Contacto-formulario-----------------------------------*/
+form{
+    text-align: center;
+}
+
+legend{
+    background-color: #33CC00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+fieldset{
+    background-color: lavender;
+}
+
+label{
+    font-weight: bold;
+}
+
+input:hover{
+    background-color: #7cbf6a;
+}
+
+.boton{
+    display: block;
+    text-align: justify;
+}
+
+.enviar{
+    padding: 2px;
+}
+
+input{
+    box-sizing: border-box;
+    border-radius: 1%;
+}
+
+.alternativa{
+    border: solid;
+    border-color: gray;
+    width: 35%;
+    background-color: lavender;
+}
+
+#contacto :first-child{
+    background-color: lavender;
+}
+/*Imagen sin alt-----------------------------------*/
+img:not([alt]){
+    border: 3px solid red;
+}
+
+/*Media queries------------------------------------*/
+
+/*Ordenador-------------------------------------*/
+@media screen and (min-width: 1024px) {
+    #container{
+        background-color: lavender;
+    }
+    #archivos{
+        flex-direction: column;
+        width: 49%;
+    }
+
+    #campus{
+        flex-direction: column;
+        width: 49%;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    footer :nth-child(odd){
+        justify-content: flex-end;
+    }
+
+
+
+   
+   
+}
+
+/*Tablet---------------------------------*/
+@media screen and (max-width: 1024px) {
+    nav{
+        position: relative;
+    }
+
+    #container{
+        background-color: #7cbf6a;
+    }
+
+    .texto{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#152e0d;
+    }    
+}
+
+/*Móvil-----------------------------------*/
+@media screen and (max-width: 680px) {
+    nav{
+        position: relative;
+    }
+    
+    #container{
+        background-color: #f1c1f1;
+    }
+
+    .texto{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#152e0d;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+}

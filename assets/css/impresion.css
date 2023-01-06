@@ -1,0 +1,8 @@
+header, nav, #container, .whatsapp, footer{
+    display: none !important;
+}
+
+
+a:after {
+    content: " (" attr(href) ") ";
+  }
