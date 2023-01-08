@@ -44,16 +44,16 @@
     <form>
         <fieldset style="width: 35%; border-radius: 8%;">
             <legend>Formulario de contacto</legend><br><br>
-            <label>Nombre y apellidos</label>
-            <input type="text" name="nombre" placeholder="Nombre y apellidos" pattern="[a-zA-Z]{1,30}" required autofocus><br><br>
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Email" required><br><br>
-            <label>Edad</label>
-            <input type="text" name="edad" placeholder="18-99" pattern="[18-99]{2}" required><br><br>
-            <label>Teléfono</label>
-            <input type="tel" name="telefono" placeholder="Número de teléfono" required><br><br>
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" pattern="[a-zA-Z]{1,30}" required autofocus><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" name="edad" placeholder="18-99" pattern="[18-99]{2}" required><br><br>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required><br><br>
             <textarea name="consulta" rows="10" cols="30" placeholder="Realiza aquí tu consulta" required></textarea><br><br>
-            <label><input type="checkbox" name="politica" checked required>Acepto la política de privacidad y las cookies</label><br><br>
+            <label for="politica"><input type="checkbox" id="politica" name="politica" checked required>Acepto la política de privacidad y las cookies</label><br><br>
         </fieldset>
         <section class="boton">
             <input class="enviar" type="submit" value="Enviar" style="background-color: #33CC00; font-weight: bold;"/>
