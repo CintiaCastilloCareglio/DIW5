@@ -181,6 +181,10 @@ tr:nth-child(even){
     background-color: rgb(173, 103, 237);
 }
 
+#servicios :first-child{
+    background-color: lavender;
+}
+
 /*Contacto-formulario-----------------------------------*/
 form{
     text-align: center;
@@ -226,9 +230,7 @@ input{
     background-color: lavender;
 }
 
-#contacto :first-child{
-    background-color: lavender;
-}
+
 /*Imagen sin alt-----------------------------------*/
 img:not([alt]){
     border: 3px solid red;
